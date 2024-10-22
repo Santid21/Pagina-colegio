@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<header class="py-5 px-10 flex items-center fixer top-0 w-full justify-between">
+		<header class="py-5 px-10 flex items-center fixer top-0 w-full justify-between z-40">
 			<div class="flex flex-grow basis-0:">
 				<svg
 				class="h-6 w-32"
@@ -18,7 +18,7 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 
 			<nav>
-				<ul class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+				<ul class="flex text-sm [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
 					<li><a href="#">Mision</a></li>
 					<li><a href="#">Vision</a></li>
 					<li><a href="#">Estudiantes</a></li>
@@ -29,7 +29,7 @@ import Layout from "../layouts/Layout.astro";
 			</nav >
 			
 			<nav class="flex flex-grow justify-end">
-				<ul class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+				<ul class="flex text-sm [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
 				<li><a href="#">op1</a></li>
 				<li><a href="#">op2</a></li>
 				<li><a href="#">op3 </a></li>
@@ -39,5 +39,33 @@ import Layout from "../layouts/Layout.astro";
 
 			
 		</header>
+
+		<section 
+		class="bg-black h-screen w-screen text-center relative overflow-hidden z-30 ">
+
+		<div class="z-30 relative h-full flex flex-col">
+			<header>
+				<h2 class="text-white pt-40 text-[40px] font-medium">--------------------------</h2>
+				<p class=" text-white text-sm">-----------------------------</p>
+			</header>
+			
+			<footer class=" text-white flex flex-col flex-grow justify-end pb-24">
+				<div>
+					<a class=" border-[4px] border-white bg-white/5 backdrop-blur-sm text-sm 
+					rounded font-medium px-12 py-2 inline-block hover:bg-black hover: text-white transition-colors " 
+					href="https://ievillacolombia.wordpress.com/gestion-directiva/matriculas/">
+						Pagina colegio
+					</a>
+				</div>
+				
+			</footer>
+		</div>
+		
+
+		
+		<div class="absolute top-0 bottom-0 h-full w-full z-10"> 
+		<video class="object-center" autoplay muted loop src="/10066-222361320.webm"> </video>
+		</div>
+		</section>
 	</main>
 </Layout>
